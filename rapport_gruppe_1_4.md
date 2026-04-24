@@ -41,7 +41,7 @@ men at vi som utviklere får mer kontroll over hva som lages og hvordan.
 
 #### Hva ble testet
 
-##### Eksperiment 1: Lav detaljeringsgrad
+##### Eksperiment A: Ingen retningslinjer
 Første oppgave: "lag game of life". Ingen videre regler. 
 claude-code løste oppgaven på 3 minutter, og resultatet var en fungerende implementasjon av game of life i python.
 
@@ -49,13 +49,16 @@ Andre oppgave: utvid game-of-life med flere valgfrie utgangspunkter.
 Tok minst dobbelt så lang tid som å lage den første løsningen. 
 
 Funn: lav detaljeringsgrad førte til at det ble lagt til ekstra features mer enn bare de vi ba om. 
-Tok hensyn til eksisterende kodebase, oig utvidet den tilsynelatende korrekt,
+Tok hensyn til eksisterende kodebase, oig utvidet den tilsynelatende korrekt
 (basert på enkel manuell testing siden vi ikke har noen enhetstester bestilt eller laget.)
 
 
+##### Eksperiment B: Bytte programmeringsspråk
+Ba Claude om å skrive om python implementasjonen til javascript + lage tester og oppdatere claude.md selv
 
+Funn: Tok ca. 5-7 minutter. Lagde først en ren javascript versjon. Ba den så om å lage en webside. Brukte da ca 5 minuter til. 
+Webside fungerte utmerket. Testene ga 100% dekning i alle aspekter.
 
-*(Beskriv oppgaven, featuren, arbeidsflyten eller caset som ble undersøkt)*
 
 #### Betingelser
 *(Minst to betingelser for sammenligning dersom det passer for eksperimentet)*
