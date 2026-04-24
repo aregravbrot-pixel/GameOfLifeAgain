@@ -8,6 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 |--------|----------|-------|
 | `python/` | Python | stdlib only (`curses`) |
 | `js/` | Node.js | requires `npm install` |
+| `web/` | Browser | open `index.html` directly, no server needed |
 
 ## Running the demo
 
@@ -22,6 +23,12 @@ Requires a terminal with curses and UTF-8 support.
 cd js && npm install
 npm start
 ```
+
+## Web version
+
+Open `web/index.html` in any browser — no install or server required. The game logic (`SEEDS`, `makeGrid`, `nextGeneration`, etc.) is inlined verbatim from `js/src/`; changes to the shared logic must be kept in sync manually.
+
+Extra features over the terminal versions: click or drag on the canvas to draw/erase cells, and the grid auto-resizes when the window is resized.
 
 ## JavaScript tests
 
