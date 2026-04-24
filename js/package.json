@@ -1,0 +1,14 @@
+{
+  "name": "game-of-life-js",
+  "version": "1.0.0",
+  "description": "Conway's Game of Life - JavaScript terminal implementation",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

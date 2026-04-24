@@ -4,17 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Implementations
 
-| Folder | Language |
-|--------|----------|
-| `python/` | Python (curses, stdlib only) |
+| Folder | Language | Notes |
+|--------|----------|-------|
+| `python/` | Python | stdlib only (`curses`) |
+| `js/` | Node.js | requires `npm install` |
 
 ## Running the demo
 
+**Python:**
 ```bash
 python python/main.py
 ```
+Requires a terminal with curses and UTF-8 support.
 
-No dependencies beyond the Python standard library. Requires a terminal that supports curses and UTF-8 (for the `█` block character).
+**JavaScript:**
+```bash
+cd js && npm install
+npm start
+```
+
+## JavaScript tests
+
+```bash
+cd js
+npm test               # run all tests
+npm run test:coverage  # with coverage report
+```
+
+Tests live in `js/test/` and cover all game-logic functions in `js/src/grid.js` and all seed definitions in `js/src/seeds.js`. `main.js` (terminal UI) is excluded from tests.
 
 ## Controls
 
