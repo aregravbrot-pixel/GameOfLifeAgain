@@ -56,41 +56,75 @@ Tok hensyn til eksisterende kodebase, oig utvidet den tilsynelatende korrekt
 ##### Eksperiment B: Bytte programmeringsspråk
 Ba Claude om å skrive om python implementasjonen til javascript + lage tester og oppdatere claude.md selv
 
-Funn: Tok ca. 5-7 minutter. Lagde først en ren javascript versjon. Ba den så om å lage en webside. Brukte da ca 5 minuter til. 
+
+Funn: Tok ca. 5-7 minutter. Lagde først en ren javascript versjon. Ba den så om å lage en webside. Brukte da ca 5 minuter til.
 Webside fungerte utmerket. Testene ga 100% dekning i alle aspekter.
+
+##### Eksperiment C: Høyere detaljeringsgrad:
+
+Valgte en større oppgave: maxiyatzy, hvor man kan spille mot maskinen. 
+
+Utvidet claude.md med regler om å lage skikkelige kravspesifikasjoner, 
+for deretter å bryte spesifikasjoner ned i mindre implementeringsoppgaver. 
+Til sist skal det gjøres testdrevet utvikling.
+
+Funn:
+Arbeid med claude-reglene tok opp mot 30 min. 
+Prosessenn med å skrive spesifikasjoner i dialog med AI'en var tidkrevende, 
+ca 2,5 timer.
+Deretter kunne Claude implementere koden på egenhånd uten spørsmål.
+
+Vi valgte å la AI'en skrive spesifikasjonene. Virket som en god ide først, 
+siden 5 ulike sett av krav raskt ble identifisert og skrevet, men det viste seg at
+de var inkonsistente og fulle av feilantakelser, så det gikk mye tid på å rette dem
+i mange iterasjoner. 
 
 
 #### Betingelser
 *(Minst to betingelser for sammenligning dersom det passer for eksperimentet)*
 
-| Betingelse | Beskrivelse |
-|---|---|
-| A - Baseline | *(beskriv)* |
-| B - Variant | *(beskriv)* |
+| Betingelse | Beskrivelse                                                                                                 |
+|---|-------------------------------------------------------------------------------------------------------------|
+| A - Baseline | AI uten noen retningslinjer eller regler                                                                    |
+| B - Variant | AI med arbeidsprosess-regler i claude.md, fanginging av eksplisitte krav og implementasjonsoppgaver i filer |
 
 #### Målemetoder
-*(Hvordan vurderte dere resultater? Tidsbruk, kvalitet, antall feil, brukbarhet, læring, o.l.)*
+Vi målte først og fremst tidsbruk.  Kvaliteten ble bare vurdert ved å se om appliakasjonen
+tilsynelatende fungerte. 
 
 ---
 
 ### 4. Resultater
 
-*(Presenter funn med tabeller, eksempler eller sitater der det er nyttig)*
+Har laget GameOfLife implementert i python, GameOfLife implementert i javascript, 
+samt maxiyatzy laget i javascript. 
+
+Den siste fungerte ikke helt, men antakelig nesten. Hadde trengt en iterasjon for å 
+få ting til å skje når man klikker. 
 
 ---
 
 ### 5. Diskusjon
 
 #### Hva funket
+Lage spesifikasjoner for krav, samt oppgavenedbryting for implementasjon funket bra.
+Be claude implementere en og en task, og committe og pushe underveis funket bra.
 
 #### Hva funket ikke
+Små initielle misforståelser eskalerte ganske fort når Claude skrev spesifikasjonene. 
+Ble tidkrevende å rydde opp i.
 
 #### Begrensninger
+Vi kunne egentlig jobbet dobbelt så lang tid. Vi brukte også litt tid til selv 
+å fordøye hvordan kravene burde være. Claude laget dem raskere enn vi
+egentlig klarte å følge med på. 
 
 ---
 
 ### 6. Konklusjon
 
-*(1-3 setninger: hva er det viktigste dere lærte?)*
+Veldig nyttig øvelse. AI er veldig kraftig og lager ting veldig fort, 
+særlig når det IKKE tar av i feil retning. Krever litt trening
+å lage prosesser og regler som holder claude litt i ørene. 
 
 ---
